@@ -17,7 +17,11 @@ public class Escuadron {
     }
 
     public void agregarDrones(Dron unDron){
-        drones.add(unDron);
+        if (drones.size() < this.getCapacidadOperativa() )
+            drones.add(unDron);
+        else{
+            throw new ArithmeticException("Supera la cantidad máxima definida por la ciudad");
+        }
     }
 
     public List<Dron> getDrones() {

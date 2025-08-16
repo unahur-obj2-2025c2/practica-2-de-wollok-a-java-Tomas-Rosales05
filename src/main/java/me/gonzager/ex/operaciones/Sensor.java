@@ -1,10 +1,10 @@
 package me.gonzager.ex.operaciones;
 
-public class Sensor {
-    private int capacidad;
-    private double durabilidad;
-    private boolean tieneBuenaTecnologia;
-    public Sensor(int capacidad, double durabilidad, boolean tieneBuenaTecnologia) {
+public final class Sensor {
+    private final int capacidad;
+    private final int durabilidad;
+    private final boolean tieneBuenaTecnologia;
+    public Sensor(int capacidad, int durabilidad, boolean tieneBuenaTecnologia) {
         this.capacidad = capacidad;
         this.durabilidad = durabilidad;
         this.tieneBuenaTecnologia = tieneBuenaTecnologia;
